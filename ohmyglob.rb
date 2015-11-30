@@ -111,7 +111,9 @@ ext.each do |extension, file_dir|
 
         # Make Directory Structures
         dst_dir = base_dir + file_dir
-        mk_dir(dst_dir)
+        if file_dir != "trash" then
+                mk_dir(dst_dir)
+        end
 
         Dir.glob("#{src_dir}/*." + "#{extension}") do |cur_file|
                 if cur_file != script_full_path
