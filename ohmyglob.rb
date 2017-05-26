@@ -46,7 +46,7 @@ if src_dir == nil then
 end
 
 ext = {
- ".pdf" => '/documents/pdf/',
+ 				 ".pdf" => '/documents/pdf/',
          ".docx" => '/documents/docx/',
          ".pptx" => '/documents/pptx/',
          ".dotx" => '/documents/dotx/',
@@ -65,8 +65,10 @@ ext = {
          ".xlsx" => '/documents/xlsx/',
          ".psd" => '/documents/psd/',
          ".ai" => '/documents/ai/',
+         ".odg" => '/documents/odg/',
          ".mindnode" => '/documents/mindnode/',
          ".jpg" => '/media/pictures/',
+         ".gif" => '/media/pictures/',
          ".jpeg" => '/media/pictures/',
          ".png" => '/media/pictures/',
          ".mpeg" => '/media/videos/',
@@ -106,14 +108,13 @@ ext = {
       }
 
 ext.each do |extension, file_dir|
-
   # Make Directory Structures
   dst_dir = base_dir + file_dir
   if file_dir != "trash" then
     mk_dir(dst_dir)
   end
 
-  Dir.glob("#{src_dir}/*" + "#{extension}") do |cur_file|
+  Dir.glob("#{src_dir}/*" + "#{extension}", File::FNM_CASEFOLD) do |cur_file|
     if cur_file != script_full_path
       if file_dir != "trash"
         dst_dir.downcase!
