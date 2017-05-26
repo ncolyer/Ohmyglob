@@ -48,6 +48,7 @@ end
 ext = {
  ".pdf" => '/documents/pdf/',
          ".docx" => '/documents/docx/',
+         ".pptx" => '/documents/pptx/',
          ".dotx" => '/documents/dotx/',
          ".doc" => '/documents/doc/',
          ".txt" => '/documents/txt/',
@@ -57,6 +58,7 @@ ext = {
          ".xsl" => '/documents/xsl/',
          ".rtf" => '/documents/rtf/',
          ".xls" => '/documents/xls/',
+         ".xlsm" => '/documents/xlsm/',
          ".csv" => '/documents/csv/',
          ".sql" => '/documents/sql/',
          ".tiff" => '/documents/tiff/',
