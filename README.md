@@ -9,11 +9,15 @@ Usage: ohmyglob.rb [options]
     
     -s, --srcdir SRC_DIR        
     
-    Set the source directory to be filed and categorized. (Typically your Downloads directory or cluttered directories.)
+    Set the source directory to be filed and categorized.
     
     -d, --basedir BASE_DIR
     
-    Set the relative base directory for the output of the script. (Typically your desktop directory.)
+    Set the relative base directory for where files where be organized.
+    
+    -e, --example
+    
+    Show example output of directory structure.
     
     -?, --help
     
