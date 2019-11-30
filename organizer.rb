@@ -34,7 +34,7 @@ OptionParser.new do |opts|
 	|   |     `-- join.me.app
 	|   |   |-- dmg
 	|   |     `-- join.me.dmg
-	|   |   `-- pkg
+	|   |   |-- pkg
 	|   |     `-- Oxford_Drum_Gate_Native_v1.01.0[865]P.pkg
 	|   |-- win
 	|       |-- com
@@ -55,7 +55,7 @@ OptionParser.new do |opts|
 	|   |   |-- ruby
 	|   |   |   `-- cleanup.rb
 	|   |   |   `-- unarchive.rb
-	|   |   `-- windows
+	|   |   |-- windows
 	|   |       `-- psEncodeDll.ps1
 	|   |-- structured
 	|       `-- FileSyncConf.xml
