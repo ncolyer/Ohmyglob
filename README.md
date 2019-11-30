@@ -2,7 +2,7 @@
 
 A simple ruby script for windows / nix based systems to organize file-types into associated folders.
 
-Usage: ohmyglob.rb [options]
+Usage: organizer.rb [options]
     
     -s, --srcdir SRC_DIR        
     
